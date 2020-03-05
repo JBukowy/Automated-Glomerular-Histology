@@ -124,16 +124,16 @@ for i = 1:size(collector,1)
     smim_FC{i} = imcrop(G,[glomloc(i,:) - round(227/2), 227, 227]);
 end
 
-%load prod_net.mat
+load prod_net.mat
+
+for i = 1:length(smim_FC)
+for j = 1:30
+   predictedScore_holder(j) = (predict(prod_net{j},imresize(smim_FC{i},[227 227])));
+end
+predictedScore(i,1) = mean(predictedScore_holder);
+clear predictedScore_holder
+end
 %
-%for i = 1:length(smim_FC)
-%for j = 1:30
-%    predictedScore_holder(j) = (predict(prod_net{j},imresize(smim_FC{i},[227 227])));
-%end
-%predictedScore(i,1) = mean(predictedScore_holder);
-%clear predictedScore_holder
-%end
-%%
 
 for i = 1:size(collector,1)
     smim_orig{i} = imcrop(f,collector(i,:));
@@ -141,7 +141,7 @@ end
 
 output = smim_orig(:);
 output(:,2) = smim_FC(:);
-% output(:,3) = num2cell(predictedScore);
+output(:,3) = num2cell(predictedScore);
 output(:,4) = num2cell(glomdist);
 output(:,5) = num2cell(glomloc,[size(glomloc,2) size(glomloc,1)]);
 output(1,6) = mat2cell(borderloc,size(borderloc,1),size(borderloc,2));
