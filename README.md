@@ -56,7 +56,7 @@ To use the GUI:
 
 GUI example:
 
-<img src="Images/GUIExample.png" width="400">
+<img src="Images/GUIExample.png" width="800">
 
 
 ## Generating Damage Maps
@@ -71,4 +71,4 @@ To use the Damage Map Scripts:
 
 Damage map example:
 
-<img src="Images/DamageMapExample.png" width="400">
+<img src="Images/DamageMapExample.png" width="800">
