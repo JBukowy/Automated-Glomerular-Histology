@@ -56,9 +56,7 @@ To use the GUI:
 
 GUI example:
 
-![alt text][GUIExample]
-
-
+<img src="Images/GUIExample.png" width="400">
 
 
 ## Generating Damage Maps
@@ -73,10 +71,4 @@ To use the Damage Map Scripts:
 
 Damage map example:
 
-![alt text][DamageMapExample]
-
-
-
-[GUIExample]: https://github.com/JBukowy/Automated-Glomerular-Histology/icon48.png "Preview of graphical user interface."
-
-[DamageMapExample]: https://github.com/JBukowy/Automated-Glomerular-Histology/blob/master/DamageMapExample.png "Example of a damage map generated using automated scoring."
+<img src="Images/DamageMapExample.png" width="400">
