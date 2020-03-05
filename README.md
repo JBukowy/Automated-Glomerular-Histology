@@ -41,6 +41,9 @@ From the matlab command window, navigate to the folder containing the RGB tif im
 - The first function call required is to "glomlocalizer_deNovo_split1". The only argument that needs to be passed is a string of the file/image you wish to process. Upon successful completion of split1, the "Stain EQ.tif" and "Stain Seperated.tif" files should be created in your working directory.
 - The second function call required is to "glomlocalizer_deNovo_split2". Again, the only argument that needs to be passed is a string of the file/image you wish to process. This string should be the same used for split1. This will produce 2 additional files in the current working directory. "Detected Glomeruli.tif" is a grayscale image of the kidney with yellow boxes indicating where glomeruli were detected. The second file, "to be Scored.mat" contains the necessary information for scoring the glomeruli. See split2 documentation for more information.
 
+Localized glomeruli example:
+
+<img src="Images/LocalizedGlomeruliExample.png" width="800">
 
 ## Processing/Scoring Detected Glomeruli
 Once you have generated the "to be Scored.mat" files you may wish to manually assign injury scores to the glomeruli. Code included in "Manual Glomeruli Scorer" will display a GUI for manual scoring.
