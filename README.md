@@ -79,4 +79,4 @@ Damage map example:
 
 [GUIExample]: https://github.com/JBukowy/Automated-Glomerular-Histology/icon48.png "Preview of graphical user interface."
 
-[DamageMapExample]: https://github.com/JBukowy/Automated-Glomerular-Histology/DamageMapExample.png "Example of a damage map generated using automated scoring."
+[DamageMapExample]: https://github.com/JBukowy/Automated-Glomerular-Histology/blob/master/DamageMapExample.png "Example of a damage map generated using automated scoring."
